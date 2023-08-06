@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6273072247642307635}
   - component: {fileID: 7848688747772650467}
   - component: {fileID: 572701374548828885}
+  - component: {fileID: 3665246770230096570}
   m_Layer: 0
   m_Name: Rocks_Snowy_57
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3665246770230096570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6879413597110281138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3710861, y: 1.1366954, z: 2.6344814}
+  m_Center: {x: 0.029508114, y: -0.1736676, z: 0.12101269}

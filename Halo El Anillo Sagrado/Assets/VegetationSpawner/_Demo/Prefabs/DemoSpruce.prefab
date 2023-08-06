@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4465860574682440742}
   - component: {fileID: 3065300696868997439}
+  - component: {fileID: 5397760774291512716}
   m_Layer: 0
   m_Name: DemoSpruce
   m_TagString: Untagged
@@ -136,3 +137,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 5956040741380252971}
   m_Enabled: 1
+--- !u!65 &5397760774291512716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7488343770391138834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.01, y: 40, z: 1.01}
+  m_Center: {x: 0, y: 19.9, z: 0}

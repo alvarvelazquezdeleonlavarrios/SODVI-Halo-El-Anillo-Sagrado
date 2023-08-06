@@ -3,10 +3,11 @@ using UnityEngine;
 public class JugadorRigidBody : MonoBehaviour {
 
     /*** Variables Públicas ***/
-    public Camera camara;
-    public float velocidad_movimiento = 5f;
-    public float velocidad_giro = 5f;
-    public float fuerza_salto = 5f;
+    [Header("Atributos Generales")]
+    [SerializeField] private Camera camara;
+    [SerializeField] private float velocidad_movimiento = 5f;
+    [SerializeField] private float velocidad_giro = 5f;
+    [SerializeField] private float fuerza_salto = 5f;
 
     /*** Variables Privadas ***/
     private Rigidbody rb;
@@ -33,6 +34,19 @@ public class JugadorRigidBody : MonoBehaviour {
         // Calcula el vector de movimiento
         Vector3 direccion = transform.forward * input_vertical + transform.right * input_horizontal;
         direccion = direccion.normalized;
+
+        // Si el jugador presiona las teclas de WASD, reproduce la animación de caminar
+        if (Mathf.Abs(input_horizontal) > 0.2 || Mathf.Abs(input_vertical) > 0.2) {
+            //animator.Play("Caminar");
+            animator.SetBool("Reposo", false);
+            animator.SetBool("Caminar", true);
+        }
+        // En caso contrario, reproduce la animación de reposo
+        else {
+            //animator.Play("Reposo");
+            animator.SetBool("Reposo", true);
+            animator.SetBool("Caminar", false);
+        }
 
         // Aplica movimiento al jugador
         Vector3 movimiento = direccion * velocidad_movimiento * Time.deltaTime;
@@ -68,9 +82,7 @@ public class JugadorRigidBody : MonoBehaviour {
         }
     }
 
-    void habilidades() {
-        /*if (Input.GetMouseButtonDown(0)) {
-            animator.SetBool("Ataque1", true);
-        } else { animator.SetBool("Ataque1", true) } } */
+    private void finalizarAnimacionDisparo() {
+        animator.SetBool("Disparar", false);
     }
 }
