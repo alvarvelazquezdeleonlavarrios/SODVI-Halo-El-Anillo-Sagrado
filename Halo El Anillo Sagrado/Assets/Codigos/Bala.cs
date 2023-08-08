@@ -21,6 +21,11 @@ public class Bala : MonoBehaviour {
     }
 
     void OnCollisionEnter(Collision collision) {
+        // Se asegura que la bala, al ser disparada, no detecte que colisionó con el jugador que la dispara
+        if (collision.gameObject.tag == "Player") {
+            return;
+        }
+
         tiempo_vida_actual = 0;
         gameObject.SetActive(false);
     }

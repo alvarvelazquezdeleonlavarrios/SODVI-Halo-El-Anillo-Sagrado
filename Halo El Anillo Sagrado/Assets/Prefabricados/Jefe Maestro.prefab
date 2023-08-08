@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1049646734250271247}
   - component: {fileID: 5303317668436446744}
   - component: {fileID: 6845454495238030037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_pCylinder14_Pouch_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2994654717475334064}
   - component: {fileID: 5906937643612389510}
   - component: {fileID: 1774948830786187753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_S1_pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 3527586480587657896}
   - component: {fileID: 8933033452295756571}
   - component: {fileID: 6756027599104504554}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_pCylinder6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 9136020336832749952}
   - component: {fileID: 1029683693696069164}
   - component: {fileID: 4480765141625563958}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_M_pCube33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 6077863998681182009}
   - component: {fileID: 8287870952092396260}
   - component: {fileID: 4072210815923816023}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Torso_BodyRetopo:ChestPlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 4344051629335259070}
   - component: {fileID: 5418746270334003357}
   - component: {fileID: 8679984028040758071}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_pCube32_Pouch_B1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 5139946107156236712}
   - component: {fileID: 7200366914892253443}
   - component: {fileID: 81524564691370827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_pCylinder13_Pouch_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 7700292072325878329}
   - component: {fileID: 5317141168576380020}
   - component: {fileID: 8800217892266879682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Right_Side_Det2_Helmet_Geo_pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 5822462689688957359}
   - component: {fileID: 525330872875309861}
   - component: {fileID: 7821060860982478402}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_BodyRetopo:Body_Retopo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 3628355502467882698}
   - component: {fileID: 849295179470661754}
   - component: {fileID: 2938759590770770534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Torso_BellyPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 1059947793061631936}
   - component: {fileID: 1721824895249709948}
   - component: {fileID: 5325427362391024801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_foot_pCube22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 5530061691489056929}
   - component: {fileID: 2673777261431506338}
   - component: {fileID: 3150242513854531247}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_pCube19_Shin_ChestSuitconnector2:Leg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,7 +1005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 79595586513725296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Jefe Maestro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,7 +1019,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743401179964685770}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 915046687472850060}
   - component: {fileID: 3881213588056275625}
   - component: {fileID: 8804102303958073574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_Thigh_holster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 359649997758416787}
   - component: {fileID: 1549556651660524137}
   - component: {fileID: 7084931593045582108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Shin_ChestSuitconnector2:Leg_R_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1300,7 @@ GameObject:
   - component: {fileID: 8215940038300235394}
   - component: {fileID: 2319720001024524523}
   - component: {fileID: 4361104702904307763}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouch_M1_Pouches_Chief_Armor_Geo_pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1383,7 +1383,7 @@ GameObject:
   - component: {fileID: 4507266370554307026}
   - component: {fileID: 7433256191106002886}
   - component: {fileID: 2544201401511179614}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_M_pCube32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1466,7 @@ GameObject:
   - component: {fileID: 7089286551050816216}
   - component: {fileID: 6955132197939666352}
   - component: {fileID: 2687383255841943145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_B_pCube32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,7 +1549,7 @@ GameObject:
   - component: {fileID: 5573117848443096821}
   - component: {fileID: 531348576561097041}
   - component: {fileID: 1960340078462865044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_foot_pCube20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1632,7 +1632,7 @@ GameObject:
   - component: {fileID: 8985135217122509221}
   - component: {fileID: 7754477186943722809}
   - component: {fileID: 857958003070994002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Lower_Arm_ChestSuitconnector2:arm_L_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1715,7 +1715,7 @@ GameObject:
   - component: {fileID: 6430834079644046334}
   - component: {fileID: 4830614782232804881}
   - component: {fileID: 7677830338988019351}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_S1_pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1798,7 @@ GameObject:
   - component: {fileID: 4505881963533901827}
   - component: {fileID: 6851101876177937860}
   - component: {fileID: 2474454450009623347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_pCylinder16_group4_Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1881,7 +1881,7 @@ GameObject:
   - component: {fileID: 2667986097182653845}
   - component: {fileID: 3431627150975166498}
   - component: {fileID: 5214407886113027580}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_B_pCylinder14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1964,7 +1964,7 @@ GameObject:
   - component: {fileID: 6670997429525851502}
   - component: {fileID: 931679771185716816}
   - component: {fileID: 2598583153233495668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_group3_Thigh_pCylinder16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2047,7 +2047,7 @@ GameObject:
   - component: {fileID: 8263570346737006672}
   - component: {fileID: 286035886163836760}
   - component: {fileID: 2984964124152063134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_pCylinder5_Right_Side_Det
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2130,7 +2130,7 @@ GameObject:
   - component: {fileID: 202647308269461439}
   - component: {fileID: 195419680570818647}
   - component: {fileID: 2772877545355860899}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_R_Forearm_Lower_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2213,7 +2213,7 @@ GameObject:
   - component: {fileID: 6049590981443101732}
   - component: {fileID: 3021130847099396577}
   - component: {fileID: 2182733172291468164}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Torso_Top_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2296,7 +2296,7 @@ GameObject:
   - component: {fileID: 1438395925896039543}
   - component: {fileID: 6015007686578168127}
   - component: {fileID: 3210719249851895719}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_pCube33_Pouch_S1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2379,7 @@ GameObject:
   - component: {fileID: 9178738439184614822}
   - component: {fileID: 7929139756911776803}
   - component: {fileID: 8199603286035249227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_pCylinder7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2462,7 +2462,7 @@ GameObject:
   - component: {fileID: 1457441129870416199}
   - component: {fileID: 6803063549304143752}
   - component: {fileID: 1962812614754465781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_pCube4_Right_Side_Det2_Helmet_Geo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2545,7 +2545,7 @@ GameObject:
   - component: {fileID: 2818954182128652488}
   - component: {fileID: 3123359526660019250}
   - component: {fileID: 7900990488448547902}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_Right_Side_Det_Breather_Attachment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2628,7 +2628,7 @@ GameObject:
   - component: {fileID: 4947650945324715089}
   - component: {fileID: 6278298004572506059}
   - component: {fileID: 2282583496185508078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Right_Side_Det2_Helmet_Geo_pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,7 +2711,7 @@ GameObject:
   - component: {fileID: 755290978697052462}
   - component: {fileID: 6675447967957664119}
   - component: {fileID: 4622967150222711446}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_M_pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2794,7 +2794,7 @@ GameObject:
   - component: {fileID: 3562127179255074652}
   - component: {fileID: 44361769279465041}
   - component: {fileID: 1650400853811774152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Torso_Pelvis_Guard_pCylinder8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2877,7 +2877,7 @@ GameObject:
   - component: {fileID: 3232417949157122868}
   - component: {fileID: 1890695265493115270}
   - component: {fileID: 2806251576404050545}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_L_pCylinder10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2960,7 +2960,7 @@ GameObject:
   - component: {fileID: 2565265939213866590}
   - component: {fileID: 6339292087305408381}
   - component: {fileID: 3267955614721581881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_Right_Side_Det_pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3043,7 +3043,7 @@ GameObject:
   - component: {fileID: 2792130144640620143}
   - component: {fileID: 4408409240278924990}
   - component: {fileID: 4522101498056032899}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_B_pCube33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3126,7 +3126,7 @@ GameObject:
   - component: {fileID: 6280160297685171619}
   - component: {fileID: 9120728392613557941}
   - component: {fileID: 8090064686012315660}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_BodyRetopo:BackBelt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3209,7 +3209,7 @@ GameObject:
   - component: {fileID: 5543425375138391737}
   - component: {fileID: 5662902225538369441}
   - component: {fileID: 5488257853285445454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3292,7 +3292,7 @@ GameObject:
   - component: {fileID: 2348079065956859030}
   - component: {fileID: 1489458577044952116}
   - component: {fileID: 2401197911405817922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_Shin_pCube19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3375,7 +3375,7 @@ GameObject:
   - component: {fileID: 4258672775923624359}
   - component: {fileID: 7169985707893171369}
   - component: {fileID: 3869177644843554386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouch_M1_Pouches_Chief_Armor_Geo_pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3458,7 +3458,7 @@ GameObject:
   - component: {fileID: 1299878340994840241}
   - component: {fileID: 1644838296519638849}
   - component: {fileID: 835549059030126504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_R_pCylinder11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3541,7 +3541,7 @@ GameObject:
   - component: {fileID: 4466661399829413604}
   - component: {fileID: 4902363721385251374}
   - component: {fileID: 8159807367478730412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_Right_Side_Det_pCube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3624,7 +3624,7 @@ GameObject:
   - component: {fileID: 1051979591433582292}
   - component: {fileID: 4457199369001575592}
   - component: {fileID: 6552577876462061607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_foot_pCube22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3707,7 +3707,7 @@ GameObject:
   - component: {fileID: 8138774878001679496}
   - component: {fileID: 6063617924294724493}
   - component: {fileID: 2017072205786589193}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Group50918
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3790,7 +3790,7 @@ GameObject:
   - component: {fileID: 3509073633423962704}
   - component: {fileID: 4361481651846382224}
   - component: {fileID: 8530344701921756281}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_foot_pCube20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3873,7 +3873,7 @@ GameObject:
   - component: {fileID: 3923195677383474438}
   - component: {fileID: 7683458350822553951}
   - component: {fileID: 5752051349519290069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouch_M1_Pouches_Chief_Armor_Geo_pCylinder14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3956,7 +3956,7 @@ GameObject:
   - component: {fileID: 7716569365154341223}
   - component: {fileID: 1693161918962122900}
   - component: {fileID: 6507540846908944493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_Right_Side_Det_pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4039,7 +4039,7 @@ GameObject:
   - component: {fileID: 4096294950542883433}
   - component: {fileID: 5735409565547259305}
   - component: {fileID: 5298719022611122726}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_S1_pCube32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4122,7 +4122,7 @@ GameObject:
   - component: {fileID: 6135428412406941917}
   - component: {fileID: 2092878719574781235}
   - component: {fileID: 2705869032662046510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_foot_pCube21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4205,7 +4205,7 @@ GameObject:
   - component: {fileID: 1445713651670269680}
   - component: {fileID: 2823890621718641222}
   - component: {fileID: 2063626197830744410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Belt_Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4288,7 +4288,7 @@ GameObject:
   - component: {fileID: 4144315678005287719}
   - component: {fileID: 6292041730539147133}
   - component: {fileID: 8125881053369032835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_S_pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4371,7 +4371,7 @@ GameObject:
   - component: {fileID: 119572940000480336}
   - component: {fileID: 7555576666631693975}
   - component: {fileID: 6158355925440720812}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_ChestSuitconnector2:polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4454,7 +4454,7 @@ GameObject:
   - component: {fileID: 970803984810180997}
   - component: {fileID: 6156177831577451700}
   - component: {fileID: 1900855068696725461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_L_pCylinder11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4537,7 +4537,7 @@ GameObject:
   - component: {fileID: 7668014282241869530}
   - component: {fileID: 6864096309358110473}
   - component: {fileID: 5446420206590186658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_S_pCube32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4620,7 +4620,7 @@ GameObject:
   - component: {fileID: 6453969645092136070}
   - component: {fileID: 6615049231244560662}
   - component: {fileID: 6896255203413501855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Right_Side_Det2_Helmet_Geo_pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4703,7 +4703,7 @@ GameObject:
   - component: {fileID: 1465635832574873908}
   - component: {fileID: 605168460820087714}
   - component: {fileID: 6324702204072147724}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_pCylinder15_group3_Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4786,7 +4786,7 @@ GameObject:
   - component: {fileID: 8499254963954017270}
   - component: {fileID: 3982084613255614266}
   - component: {fileID: 8994045502419029644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouch_M1_Pouches_Chief_Armor_Geo_pCube32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4869,7 +4869,7 @@ GameObject:
   - component: {fileID: 4596966398786651921}
   - component: {fileID: 2731477498026339321}
   - component: {fileID: 4973884931137982093}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_R_pCylinder9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4952,7 +4952,7 @@ GameObject:
   - component: {fileID: 1781922544808281288}
   - component: {fileID: 2352011154166658012}
   - component: {fileID: 994276544482229320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:polySurface1_ChestSuitconnector2:Leg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5035,7 +5035,7 @@ GameObject:
   - component: {fileID: 1563224966620455061}
   - component: {fileID: 8992041081257418065}
   - component: {fileID: 6069158490062061741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_Right_Side_Det_pCylinder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5118,7 +5118,7 @@ GameObject:
   - component: {fileID: 2186356881735725822}
   - component: {fileID: 3636239585708163103}
   - component: {fileID: 265956179852630581}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_group4_Thigh_pCylinder15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5201,7 +5201,7 @@ GameObject:
   - component: {fileID: 5193156584369597520}
   - component: {fileID: 2293663721660833493}
   - component: {fileID: 7645866788475616864}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_pCube23_foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5284,7 +5284,7 @@ GameObject:
   - component: {fileID: 3996694791924251699}
   - component: {fileID: 3799642526875375085}
   - component: {fileID: 4131663952665846665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Torso_pCube7_Pelvis_Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5367,7 +5367,7 @@ GameObject:
   - component: {fileID: 560973655736962488}
   - component: {fileID: 3535429198297050855}
   - component: {fileID: 5963218972990727363}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_M_pCylinder14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5450,7 +5450,7 @@ GameObject:
   - component: {fileID: 499715529688188533}
   - component: {fileID: 3029537663161236245}
   - component: {fileID: 8593985382318871685}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_Thigh_pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5533,7 +5533,7 @@ GameObject:
   - component: {fileID: 4801469949984041557}
   - component: {fileID: 2481397002438653335}
   - component: {fileID: 2663278239000085033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_Shinguard:Mesh_Shin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5616,7 +5616,7 @@ GameObject:
   - component: {fileID: 2661419113519438462}
   - component: {fileID: 8734698600491949636}
   - component: {fileID: 8947415602823617152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_Right_Side_Det_pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5699,7 +5699,7 @@ GameObject:
   - component: {fileID: 8757554579877663961}
   - component: {fileID: 8570209080008180956}
   - component: {fileID: 6068940099141891047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_pCylinder10_ChestSuitconnector2:arm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5782,7 +5782,7 @@ GameObject:
   - component: {fileID: 5471953150572602293}
   - component: {fileID: 1145332926106308364}
   - component: {fileID: 2031429272951207907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_L_L_Upper_ArmMerged_Upper_arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5865,7 +5865,7 @@ GameObject:
   - component: {fileID: 2849075053950748558}
   - component: {fileID: 1557569475786814002}
   - component: {fileID: 413283862688859524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Helmet_Geo_Right_Side_Det_pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5948,7 +5948,7 @@ GameObject:
   - component: {fileID: 3056731754051890125}
   - component: {fileID: 3445115552850155587}
   - component: {fileID: 8489713334578643227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_L_pCylinder9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6031,7 +6031,7 @@ GameObject:
   - component: {fileID: 2246973486412192368}
   - component: {fileID: 532072578269321481}
   - component: {fileID: 4292995851029567876}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_Thigh_pPlane3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6114,7 +6114,7 @@ GameObject:
   - component: {fileID: 3067018656526776235}
   - component: {fileID: 803110175352811304}
   - component: {fileID: 5053533425561127106}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_B1_pCylinder14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6197,7 +6197,7 @@ GameObject:
   - component: {fileID: 4185654090461068959}
   - component: {fileID: 9068327140872632706}
   - component: {fileID: 6396415331541913457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Right_Side_Det2_Helmet_Geo_pCylinder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6280,7 +6280,7 @@ GameObject:
   - component: {fileID: 7056449817408850258}
   - component: {fileID: 4327594662684508641}
   - component: {fileID: 324871399196728521}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Right_Side_Det2_Helmet_Geo_pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6363,7 +6363,7 @@ GameObject:
   - component: {fileID: 8260526023399368395}
   - component: {fileID: 2528570349936771843}
   - component: {fileID: 1910603553581157481}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_S1_pCylinder14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6446,7 +6446,7 @@ GameObject:
   - component: {fileID: 1749399617629447350}
   - component: {fileID: 2263028782482246406}
   - component: {fileID: 1626192009186762854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_B_pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6529,7 +6529,7 @@ GameObject:
   - component: {fileID: 8386098868721028339}
   - component: {fileID: 1416317780133791126}
   - component: {fileID: 8470773136893431242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_B1_pCube33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6612,7 +6612,7 @@ GameObject:
   - component: {fileID: 8308332786050917170}
   - component: {fileID: 2812245586527292346}
   - component: {fileID: 3080885574287853781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube33_Pouch_M1_Pouches_Chief_Armor_Geo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6695,7 +6695,7 @@ GameObject:
   - component: {fileID: 3492107155086275275}
   - component: {fileID: 4935225860599675973}
   - component: {fileID: 6721776198844933399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_R_ChestSuitconnector2:arm_R_Upper_arm_polySurface3_Upper_arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6778,7 +6778,7 @@ GameObject:
   - component: {fileID: 5328638234183115241}
   - component: {fileID: 1759610022327367625}
   - component: {fileID: 4919276288193952652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_pCube23_foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6861,7 +6861,7 @@ GameObject:
   - component: {fileID: 7107864714129669476}
   - component: {fileID: 5752269659378704422}
   - component: {fileID: 7369914687937690201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_pCube34_Pouch_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6944,7 +6944,7 @@ GameObject:
   - component: {fileID: 8789164849713633195}
   - component: {fileID: 2561189707872380155}
   - component: {fileID: 1745230466827529404}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_B1_pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7027,7 +7027,7 @@ GameObject:
   - component: {fileID: 6883658677827873403}
   - component: {fileID: 4962657898783431179}
   - component: {fileID: 8793147292101332814}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Right_Side_Det2_Helmet_Geo_Breather_Attachment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7110,7 +7110,7 @@ GameObject:
   - component: {fileID: 2529701384387490050}
   - component: {fileID: 6025618574961258816}
   - component: {fileID: 8275014573905177466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_Thigh_pPlane3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7193,7 +7193,7 @@ GameObject:
   - component: {fileID: 6856438950711191583}
   - component: {fileID: 2482102695796062292}
   - component: {fileID: 6442662411777753723}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_R_Thigh_holster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7276,7 +7276,7 @@ GameObject:
   - component: {fileID: 2993121570019881438}
   - component: {fileID: 2055608527204615248}
   - component: {fileID: 4798881258092901310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_Thigh_pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7359,7 +7359,7 @@ GameObject:
   - component: {fileID: 2117407883729312526}
   - component: {fileID: 64947410458898117}
   - component: {fileID: 3823891063693284804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Torso_Neck_topt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7442,7 +7442,7 @@ GameObject:
   - component: {fileID: 3022514799446998842}
   - component: {fileID: 2799890200045299924}
   - component: {fileID: 5152319557973998919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_B1_pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7525,7 +7525,7 @@ GameObject:
   - component: {fileID: 186873811196132399}
   - component: {fileID: 1420053275154733792}
   - component: {fileID: 5691516364156341907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_S_pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7608,7 +7608,7 @@ GameObject:
   - component: {fileID: 771835740183441864}
   - component: {fileID: 5376878388605703411}
   - component: {fileID: 8568892209158470840}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:Leg_L_foot_pCube21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7691,7 +7691,7 @@ GameObject:
   - component: {fileID: 80715242641588901}
   - component: {fileID: 8629282849707411398}
   - component: {fileID: 6700482073021801245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector2:arm_R_Lower_Arm_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7774,7 +7774,7 @@ GameObject:
   - component: {fileID: 4251459209276725565}
   - component: {fileID: 5240311056015173586}
   - component: {fileID: 3171786457147526646}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_ChestSuitconnector:Group65130
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7857,7 +7857,7 @@ GameObject:
   - component: {fileID: 3556387804788612885}
   - component: {fileID: 1957139749100622997}
   - component: {fileID: 8881178215861533214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pouches_Chief_Armor_Geo_Pouch_S_pCube33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7940,7 +7940,7 @@ GameObject:
   - component: {fileID: 8233895723313270198}
   - component: {fileID: 2113798775958671261}
   - component: {fileID: 7423744004250209410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Forearm_Lower_Arm_ChestSuitconnector2:arm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8023,7 +8023,7 @@ GameObject:
   - component: {fileID: 1945087067771455589}
   - component: {fileID: 309617157472161700}
   - component: {fileID: 9132888628870563339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chief_Armor_Geo_Right_Side_Det2_Helmet_Geo_pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}

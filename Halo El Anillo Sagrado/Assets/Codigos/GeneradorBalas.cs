@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class GeneradorBalas : MonoBehaviour {
 
     /*** Variables públicas ***/
-    [Header("Atributos Generales")]
+    [Header("Atributos de Bala")]
     [SerializeField] private JugadorRigidBody jugador;
     [SerializeField] private Bala prefab_bala;
     [SerializeField] private Bala[] lista_balas;
@@ -15,15 +15,18 @@ public class GeneradorBalas : MonoBehaviour {
     [SerializeField] private Text texto_balas_actuales;
     [SerializeField] private Text texto_balas_maximas;
 
+
     /*** Variables privadas ***/
     private Animator animator_jugador;
     private Bala bala_generada;
     private Rigidbody rb_bala;
-    private float velocidad_disparo = 20f;
+    private float velocidad_disparo = 40f;
     private int balas_actuales = 32;
     private int balas_maximas = 108;
 
-    //private float tiempo_recarga = 1.5f;
+    private float tiempo_recarga = 1.5f;
+    private float tiempo_recarga_actual = 0f;
+    private bool recargando = false;
 
 
     /*** Funciones ***/
@@ -45,12 +48,27 @@ public class GeneradorBalas : MonoBehaviour {
     }
 
     void Update() {
+        // Acción de disparar
         if (Input.GetMouseButtonDown(0)) {
             disparar();
         }
 
+        // Acción de recargar
         if (Input.GetKeyDown(KeyCode.R)) {
             recargar();
+        }
+
+        // Tiempo de espera para que se recargue el arma
+        if (recargando == true) {
+            tiempo_recarga_actual += Time.deltaTime;
+
+            // Pasado el tiempo de espera, el jugador recarga
+            if (tiempo_recarga_actual >= tiempo_recarga) {
+                recarga();
+
+                recargando = false;
+                tiempo_recarga_actual = 0f;
+            }
         }
     }
 
@@ -90,22 +108,32 @@ public class GeneradorBalas : MonoBehaviour {
         // Primero verifica que el cargador actual del arma no esté lleno y que todavía haya balas en el inventario
         if (balas_actuales < 32 && balas_maximas > 0) {
 
-            // Determina la cantidad de balas que hacen falta en el cargador actual
-            int balas_faltantes = 32 - balas_actuales;
-
-            // La cantidad de balas en el inventario es mayor o igual a las balas que hacen falta
-            if (balas_maximas >= balas_faltantes) {
-                balas_actuales = 32;
-                balas_maximas -= balas_faltantes;
+            // Determina si no se está recargando en el momento actual
+            if (recargando == false) {
+                recargando = true;
             }
-            // La cantidad de balas en el inventario es menor a las balas que hacen falta
-            else {
-                balas_actuales += balas_maximas;
-                balas_maximas = 0;
-            }
-
-            actualizarBalasUI();
+            
         }
+    }
+
+    private void recarga() {
+        // Determina la cantidad de balas que hacen falta en el cargador actual
+        int balas_faltantes = 32 - balas_actuales;
+
+        // La cantidad de balas en el inventario es mayor o igual a las balas que hacen falta
+        if (balas_maximas >= balas_faltantes)
+        {
+            balas_actuales = 32;
+            balas_maximas -= balas_faltantes;
+        }
+        // La cantidad de balas en el inventario es menor a las balas que hacen falta
+        else
+        {
+            balas_actuales += balas_maximas;
+            balas_maximas = 0;
+        }
+
+        actualizarBalasUI();
     }
 
     // Mediante la técnica de Object Pooling, obtiene la bala más próxima disponible para ser utilizada
