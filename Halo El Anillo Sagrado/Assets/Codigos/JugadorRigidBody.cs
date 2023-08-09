@@ -9,6 +9,10 @@ public class JugadorRigidBody : MonoBehaviour {
     [SerializeField] private float velocidad_giro = 5f;
     [SerializeField] private float fuerza_salto = 5f;
 
+    [Space]
+    [Header("Referencias Externas")]
+    [SerializeField] private GeneradorBalas generador_balas;
+
     /*** Variables Privadas ***/
     private Rigidbody rb;
     private Animator animator;
@@ -77,8 +81,13 @@ public class JugadorRigidBody : MonoBehaviour {
     }
 
     void OnCollisionEnter(Collision collision) {
+        // El jugador toca el suelo
         if (collision.gameObject.tag == "Suelo") {
             en_suelo = true;
+        }
+        // El jugador toca una caja de municiones
+        else if (collision.gameObject.tag == "Caja Municion") {
+            generador_balas.agregarMunicionMaxima(collision);
         }
     }
 

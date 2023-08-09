@@ -121,14 +121,12 @@ public class GeneradorBalas : MonoBehaviour {
         int balas_faltantes = 32 - balas_actuales;
 
         // La cantidad de balas en el inventario es mayor o igual a las balas que hacen falta
-        if (balas_maximas >= balas_faltantes)
-        {
+        if (balas_maximas >= balas_faltantes) {
             balas_actuales = 32;
             balas_maximas -= balas_faltantes;
         }
         // La cantidad de balas en el inventario es menor a las balas que hacen falta
-        else
-        {
+        else {
             balas_actuales += balas_maximas;
             balas_maximas = 0;
         }
@@ -149,6 +147,24 @@ public class GeneradorBalas : MonoBehaviour {
     void actualizarBalasUI() {
         texto_balas_actuales.text = balas_actuales.ToString("D2");
         texto_balas_maximas.text = balas_maximas.ToString("D3");
+    }
+
+    public void agregarMunicionMaxima(Collision objeto_cargador) {
+        if (objeto_cargador != null && objeto_cargador.gameObject.tag == "Caja Municion") {
+
+            // Solo se agregan balas si el cargador aún no está lleno
+            if (balas_maximas < 216) {
+                balas_maximas += 54;
+
+                if (balas_maximas > 216) {
+                    balas_maximas = 216;
+                }
+
+                actualizarBalasUI();
+
+                Destroy(objeto_cargador.gameObject);
+            }
+        }
     }
 
 }
