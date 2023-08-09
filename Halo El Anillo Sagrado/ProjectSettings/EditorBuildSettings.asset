@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Escenas/Anillo Halo.unity
+    guid: c59181893b9ce00409be7c53a651ffa8
+  - enabled: 1
+    path: Assets/Escenas/Inicio.unity
+    guid: 095abe99389e1cc42a047a4cb42c2da2
+  - enabled: 1
+    path: Assets/Escenas/MUERTE.unity
+    guid: 55b84a9a7ce227d45839b233a675a28b
   m_configObjects: {}
