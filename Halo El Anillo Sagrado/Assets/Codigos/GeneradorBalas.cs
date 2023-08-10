@@ -7,13 +7,20 @@ public class GeneradorBalas : MonoBehaviour {
     [Header("Atributos de Bala")]
     [SerializeField] private JugadorRigidBody jugador;
     [SerializeField] private Bala prefab_bala;
-    [SerializeField] private Bala[] lista_balas;
-    [SerializeField] private int tamano_lista_balas = 20;
+    private Bala[] lista_balas;
+    private int tamano_lista_balas = 20;
 
     [Space]
     [Header("Elementos en pantalla")]
     [SerializeField] private Text texto_balas_actuales;
     [SerializeField] private Text texto_balas_maximas;
+
+    [Space]
+    [Header("Sistema de Audio")]
+    [SerializeField] private AudioSource sonido_recarga;
+    [SerializeField] private AudioSource prefab_sonido_disparo;
+    private AudioSource[] lista_audios_disparo;
+    private int tamano_lista_audios_disparo = 25;
 
 
     /*** Variables privadas ***/
@@ -34,13 +41,22 @@ public class GeneradorBalas : MonoBehaviour {
     void Start() {
         animator_jugador = jugador.GetComponent<Animator>();
         lista_balas = new Bala[tamano_lista_balas];
+        lista_audios_disparo = new AudioSource[tamano_lista_audios_disparo];
 
+        // Genera nuevos GameObjects de tipo Bala
         for (int i=0; i< tamano_lista_balas; i++) {
-            // Genera nuevos GameObjects de tipo Bala en la jerarquía
             bala_generada = Instantiate(prefab_bala, transform.position, transform.rotation, jugador.transform);
             bala_generada.gameObject.SetActive(false);
 
             lista_balas[i] = bala_generada;
+        }
+
+        // Genera nuevas fuentes de audio para los disparos
+        for (int i=0; i< tamano_lista_audios_disparo; i++) {
+            AudioSource audio_generado = Instantiate(prefab_sonido_disparo, transform.position, transform.rotation, transform);
+            audio_generado.Stop();
+
+            lista_audios_disparo[i] = audio_generado;
         }
 
         // Muestra las balas iniciales en pantalla
@@ -93,6 +109,9 @@ public class GeneradorBalas : MonoBehaviour {
                 // Permite reproducir la animación de disparo
                 animator_jugador.SetBool("Disparar", true);
 
+                // Reproduce el audio de bala disparada
+                reproducirAudioDisponible();
+
                 // Actualiza la cantidad de balas en pantalla
                 actualizarBalasUI();
             }
@@ -113,6 +132,7 @@ public class GeneradorBalas : MonoBehaviour {
                 // Permite reproducir la animación de recarga
                 animator_jugador.SetBool("Recargar", true);
 
+                sonido_recarga.Play();
                 recargando = true;
             }
             
@@ -148,6 +168,16 @@ public class GeneradorBalas : MonoBehaviour {
         return null;
     }
 
+    // Mediante la técnica de Object Pooling, reproduce el audio de disparo más próximo disponible
+    private void reproducirAudioDisponible() {
+        for (int i=0; i<lista_audios_disparo.Length; i++) {
+            if (lista_audios_disparo[i].isPlaying == false) {
+                lista_audios_disparo[i].Play();
+                break;
+            }
+        }
+    }
+
     void actualizarBalasUI() {
         texto_balas_actuales.text = balas_actuales.ToString("D2");
         texto_balas_maximas.text = balas_maximas.ToString("D3");
@@ -165,7 +195,6 @@ public class GeneradorBalas : MonoBehaviour {
                 }
 
                 actualizarBalasUI();
-
                 Destroy(objeto_cargador.gameObject);
             }
         }

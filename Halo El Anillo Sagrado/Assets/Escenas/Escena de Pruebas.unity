@@ -20219,7 +20219,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 564875756961830991, guid: 564e22f82b2c65f4db5b7447394e81af, type: 3}
       propertyPath: m_Name
-      value: Enemigo
+      value: Elite
       objectReference: {fileID: 0}
     - target: {fileID: 908890596251321077, guid: 564e22f82b2c65f4db5b7447394e81af, type: 3}
       propertyPath: m_RootOrder

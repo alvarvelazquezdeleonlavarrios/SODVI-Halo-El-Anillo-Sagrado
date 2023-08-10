@@ -25,6 +25,11 @@ public class JugadorRigidBody : MonoBehaviour {
     [Header("Referencias Externas")]
     [SerializeField] private GeneradorBalas generador_balas;
 
+    [Space]
+    [Header("Sistema de Audio")]
+    [SerializeField] private AudioSource fuente_audio;
+    [SerializeField] private AudioClip sonido_escudo_bajo, sonido_escudo_apagado, sonido_escudo_recargando;
+
     /*** Variables Privadas ***/
     private Rigidbody rb;
     private Animator animator;
@@ -109,6 +114,21 @@ public class JugadorRigidBody : MonoBehaviour {
             // El jugador todavía tiene escudo
             if (escudo > 0f) {
                 escudo -= 15f;
+
+                // Audio de escudo bajo
+                if (escudo <= 25f && escudo > 0f) {
+                    fuente_audio.clip = sonido_escudo_bajo;
+                    fuente_audio.loop = true;
+                    fuente_audio.Play();
+                }
+                // Audio de escudo apagado
+                else if (escudo <= 0f) {
+                    escudo = 0f;
+                    fuente_audio.clip = sonido_escudo_apagado;
+                    fuente_audio.loop = true;
+                    fuente_audio.Play();
+                }
+
             }
             // El jugador no tiene escudo
             else {
@@ -137,20 +157,26 @@ public class JugadorRigidBody : MonoBehaviour {
 
     private void recargarEscudo() {
         // Si no está lleno el escudo, se espera un tiempo hasta que se recargue
-        if (escudo_lleno == false) {
+        if (escudo_lleno == false && recargando_escudo == false) {
             tiempo_espera_escudo_actual += Time.deltaTime;
 
             // Pasado ese tiempo, el escudo comienza a recargarse
             if (tiempo_espera_escudo_actual >= tiempo_espera_escudo) {
                 recargando_escudo = true;
                 tiempo_espera_escudo_actual = tiempo_espera_escudo;
+
+                // Audio de escudo recargando
+                fuente_audio.Stop();
+                fuente_audio.clip = sonido_escudo_recargando;
+                fuente_audio.loop = false;
+                fuente_audio.Play();
             }
         }
 
         // Va recargando los escudos durante un tiempo
         if (recargando_escudo == true) {
-            escudo = Mathf.MoveTowards(escudo, 100f, 25f * Time.deltaTime);
-            vida = Mathf.MoveTowards(vida, 100f, 25f * Time.deltaTime);
+            escudo = Mathf.MoveTowards(escudo, 100f, 35f * Time.deltaTime);
+            vida = Mathf.MoveTowards(vida, 100f, 35f * Time.deltaTime);
             actualizarEscudoUI();
 
             // Los escudos ya se recargaron por completo

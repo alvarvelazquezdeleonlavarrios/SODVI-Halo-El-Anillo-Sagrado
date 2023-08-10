@@ -13,15 +13,25 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
     [Space]
     [Header("Atributos Bala Enemiga")]
     [SerializeField] private BalaEnemiga prefab_bala_enemiga;
-    [SerializeField] private BalaEnemiga[] lista_balas;
+    private BalaEnemiga[] lista_balas;
+
+    [Space]
+    [Header("Sistema de Audio")]
+    [SerializeField] private AudioSource prefab_sonido_disparo;
+    private AudioSource[] lista_audios_disparo;
+    private int tamano_lista_audios_disparo = 6;
+
 
     // Variables para el manejo de balas
+    [Space]
+    [Header("Sistema de Disparos")]
+    [SerializeField]  private float velocidad_disparo = 20f;
+    [SerializeField]  private float tiempo_cadencia_disparo = 1.5f;
+    private float tiempo_cadencia_actual = 0f;
     private BalaEnemiga bala_generada;
     private Rigidbody rb_bala;
     private int tamano_lista_balas = 15;
-    private float velocidad_disparo = 20f;
-    private float tiempo_cadencia_disparo = 2.5f;
-    private float tiempo_cadencia_actual = 0f;
+    
 
     // Variables para el movimiento automático del enemigo
     Vector3 movimiento;
@@ -35,13 +45,22 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
 
     void Start() {
         lista_balas = new BalaEnemiga[tamano_lista_balas];
+        lista_audios_disparo = new AudioSource[tamano_lista_audios_disparo];
 
+        // Genera nuevos GameObjects de tipo Bala Enemiga
         for (int i = 0; i < tamano_lista_balas; i++) {
-            // Genera nuevos GameObjects de tipo Bala en la jerarquía
             bala_generada = Instantiate(prefab_bala_enemiga, transform.position, transform.rotation, enemigo_generador_bala);
             bala_generada.gameObject.SetActive(false);
 
             lista_balas[i] = bala_generada;
+        }
+
+        // Genera nuevas fuentes de audio para los disparos
+        for (int i = 0; i < tamano_lista_audios_disparo; i++) {
+            AudioSource audio_generado = Instantiate(prefab_sonido_disparo, transform.position, transform.rotation, transform);
+            audio_generado.Stop();
+
+            lista_audios_disparo[i] = audio_generado;
         }
 
         // Obtiene el RigidBody del enemigo para poder moverlo
@@ -152,6 +171,9 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
                 bala_obtenida.gameObject.SetActive(true);
                 rb_bala = bala_obtenida.GetComponent<Rigidbody>();
                 rb_bala.velocity = enemigo_generador_bala.forward * velocidad_disparo;
+
+                // Reproduce el audio de bala disparada
+                reproducirAudioDisponible();
             }
 
             // Reinicia el tiempo de cadencia actual
@@ -167,6 +189,16 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
             }
         }
         return null;
+    }
+
+    // Mediante la técnica de Object Pooling, reproduce el audio de disparo más próximo disponible
+    private void reproducirAudioDisponible() {
+        for (int i = 0; i < lista_audios_disparo.Length; i++) {
+            if (lista_audios_disparo[i].isPlaying == false) {
+                lista_audios_disparo[i].Play();
+                break;
+            }
+        }
     }
 
 }

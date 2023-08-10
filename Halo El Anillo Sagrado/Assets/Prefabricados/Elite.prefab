@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 7204429468577144466}
   - component: {fileID: 4011000981155221434}
   m_Layer: 0
-  m_Name: Enemigo
+  m_Name: Elite
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4736,7 +4736,9 @@ MonoBehaviour:
   enemigo: {fileID: 4011000981155221434}
   enemigo_generador_bala: {fileID: 1475764887655466874}
   prefab_bala_enemiga: {fileID: 6368082203811991030, guid: 3c52c2331c240c440be7dc29d5a5eaac, type: 3}
-  lista_balas: []
+  prefab_sonido_disparo: {fileID: 7735756168471884334, guid: 714217449727caa4b9d615fbc41d55b8, type: 3}
+  velocidad_disparo: 20
+  tiempo_cadencia_disparo: 1.5
 --- !u!1 &6376564530359355881
 GameObject:
   m_ObjectHideFlags: 0
