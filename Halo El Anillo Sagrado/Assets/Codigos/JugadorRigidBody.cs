@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JugadorRigidBody : MonoBehaviour {
 
@@ -8,6 +9,17 @@ public class JugadorRigidBody : MonoBehaviour {
     [SerializeField] private float velocidad_movimiento = 5f;
     [SerializeField] private float velocidad_giro = 5f;
     [SerializeField] private float fuerza_salto = 5f;
+
+    [Space]
+    [Header("Elementos en Pantalla")]
+    [SerializeField] private Image barra_escudo;
+    [SerializeField] private Image barra_vida;
+    private float escudo = 100f;
+    private float vida = 100f;
+    private float tiempo_espera_escudo = 5f;
+    private float tiempo_espera_escudo_actual = 0f;
+    private bool escudo_lleno = true;
+    private bool recargando_escudo = false;
 
     [Space]
     [Header("Referencias Externas")]
@@ -41,13 +53,11 @@ public class JugadorRigidBody : MonoBehaviour {
 
         // Si el jugador presiona las teclas de WASD, reproduce la animación de caminar
         if (Mathf.Abs(input_horizontal) > 0.2 || Mathf.Abs(input_vertical) > 0.2) {
-            //animator.Play("Caminar");
             animator.SetBool("Reposo", false);
             animator.SetBool("Caminar", true);
         }
         // En caso contrario, reproduce la animación de reposo
         else {
-            //animator.Play("Reposo");
             animator.SetBool("Reposo", true);
             animator.SetBool("Caminar", false);
         }
@@ -69,7 +79,7 @@ public class JugadorRigidBody : MonoBehaviour {
 
         // Movimiento de Salto
         if (input_salto && en_suelo) {
-            rb.AddForce(transform.up * fuerza_salto, ForceMode.Impulse);
+            rb.AddForce(transform.up * fuerza_salto * 50f, ForceMode.Impulse);
             en_suelo = false;
         }
 
@@ -78,6 +88,10 @@ public class JugadorRigidBody : MonoBehaviour {
         mouseY += Input.GetAxis("Mouse Y") * velocidad_giro;
         mouseY = Mathf.Clamp(mouseY, -70f, 70f);
         camara.transform.localEulerAngles = Vector3.left * mouseY;
+
+
+        // Revisar si el escudo no esta lleno
+        recargarEscudo();
     }
 
     void OnCollisionEnter(Collision collision) {
@@ -89,9 +103,70 @@ public class JugadorRigidBody : MonoBehaviour {
         else if (collision.gameObject.tag == "Caja Municion") {
             generador_balas.agregarMunicionMaxima(collision);
         }
+        // El jugador recibe una bala enemiga
+        else if (collision.gameObject.tag == "Bala Enemiga") {
+
+            // El jugador todavía tiene escudo
+            if (escudo > 0f) {
+                escudo -= 15f;
+            }
+            // El jugador no tiene escudo
+            else {
+                escudo = 0f;
+                vida -= 15f;
+
+                if (vida <= 0f) {
+                    print("Escena de Muerte");
+                }
+            }
+
+            recargando_escudo = false;
+            escudo_lleno = false;
+            tiempo_espera_escudo_actual = 0f;
+            actualizarEscudoUI();
+        }
     }
 
     private void finalizarAnimacionDisparo() {
         animator.SetBool("Disparar", false);
+    }
+
+    private void finalizarAnimacionRecarga() {
+        animator.SetBool("Recargar", false);
+    }
+
+    private void recargarEscudo() {
+        // Si no está lleno el escudo, se espera un tiempo hasta que se recargue
+        if (escudo_lleno == false) {
+            tiempo_espera_escudo_actual += Time.deltaTime;
+
+            // Pasado ese tiempo, el escudo comienza a recargarse
+            if (tiempo_espera_escudo_actual >= tiempo_espera_escudo) {
+                recargando_escudo = true;
+                tiempo_espera_escudo_actual = tiempo_espera_escudo;
+            }
+        }
+
+        // Va recargando los escudos durante un tiempo
+        if (recargando_escudo == true) {
+            escudo = Mathf.MoveTowards(escudo, 100f, 25f * Time.deltaTime);
+            vida = Mathf.MoveTowards(vida, 100f, 25f * Time.deltaTime);
+            actualizarEscudoUI();
+
+            // Los escudos ya se recargaron por completo
+            if (escudo >= 100f && vida >= 100f) {
+                escudo = 100f;
+                vida = 100f;
+                recargando_escudo = false;
+                escudo_lleno = true;
+
+                actualizarEscudoUI();
+            }
+        }
+    }
+
+    private void actualizarEscudoUI() {
+        barra_escudo.fillAmount = escudo / 100f;
+        barra_vida.fillAmount = vida / 100f;
     }
 }

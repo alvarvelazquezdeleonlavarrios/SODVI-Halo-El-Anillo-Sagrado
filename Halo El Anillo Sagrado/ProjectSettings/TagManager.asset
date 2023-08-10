@@ -8,6 +8,7 @@ TagManager:
   - Bala
   - Caja Municion
   - Enemigo
+  - Bala Enemiga
   layers:
   - Default
   - TransparentFX

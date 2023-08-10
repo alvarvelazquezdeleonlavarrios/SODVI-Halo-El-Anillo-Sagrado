@@ -37,7 +37,7 @@ public class GeneradorBalas : MonoBehaviour {
 
         for (int i=0; i< tamano_lista_balas; i++) {
             // Genera nuevos GameObjects de tipo Bala en la jerarquía
-            bala_generada = Instantiate(prefab_bala, transform.position, transform.rotation);
+            bala_generada = Instantiate(prefab_bala, transform.position, transform.rotation, jugador.transform);
             bala_generada.gameObject.SetActive(false);
 
             lista_balas[i] = bala_generada;
@@ -73,7 +73,7 @@ public class GeneradorBalas : MonoBehaviour {
     }
 
     private void disparar() {
-        if (balas_actuales > 0) {
+        if (balas_actuales > 0 && recargando == false) {
             
             // Dispara una bala creada previamente mediante la técnica Object Pooling
             Bala bala_obtenida = obtenerBalaDisponible();
@@ -110,6 +110,9 @@ public class GeneradorBalas : MonoBehaviour {
 
             // Determina si no se está recargando en el momento actual
             if (recargando == false) {
+                // Permite reproducir la animación de recarga
+                animator_jugador.SetBool("Recargar", true);
+
                 recargando = true;
             }
             
@@ -131,6 +134,7 @@ public class GeneradorBalas : MonoBehaviour {
             balas_maximas = 0;
         }
 
+        // Actualiza la cantidad de balas en pantalla
         actualizarBalasUI();
     }
 

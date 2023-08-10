@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bala : MonoBehaviour {
+public class BalaEnemiga : MonoBehaviour {
 
     /*** Variables privadas ***/
     private float tiempo_vida = 1.7f;
@@ -22,8 +22,8 @@ public class Bala : MonoBehaviour {
     }
 
     void OnCollisionEnter(Collision collision) {
-        // Se asegura que la bala, al ser disparada, no detecte que colisionó con el jugador que la dispara
-        if (collision.gameObject.tag == "Player") {
+        // Se asegura que la bala, al ser disparada, no detecte que colisionó con el Enemigo que la dispara
+        if (collision.gameObject.tag == "Enemigo") {
             return;
         }
 
