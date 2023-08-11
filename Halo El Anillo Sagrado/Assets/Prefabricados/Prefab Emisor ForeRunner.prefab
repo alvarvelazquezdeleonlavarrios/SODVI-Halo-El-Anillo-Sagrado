@@ -233,6 +233,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForeRunner_Structure
       objectReference: {fileID: 0}
+    - target: {fileID: 5252682845850649624, guid: f333b464e8330144db59161dec0c9ea1, type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009987137999418058, guid: f333b464e8330144db59161dec0c9ea1, type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f333b464e8330144db59161dec0c9ea1, type: 3}
 --- !u!1 &2041410546295461147 stripped

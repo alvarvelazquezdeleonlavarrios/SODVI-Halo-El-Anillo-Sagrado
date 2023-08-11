@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemigoZonaDeteccion : MonoBehaviour {
@@ -11,8 +9,14 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
     private Rigidbody rb_enemigo;
 
     [Space]
+    [Header("Movimiento Enemigo")]
+    [SerializeField] private float velocidad_movimiento = 3.6f;
+
+    [Space]
     [Header("Atributos Bala Enemiga")]
     [SerializeField] private BalaEnemiga prefab_bala_enemiga;
+    [SerializeField] private float velocidad_disparo = 20f;
+    [SerializeField] private float tiempo_cadencia_disparo = 1.5f;
     private BalaEnemiga[] lista_balas;
 
     [Space]
@@ -23,14 +27,10 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
 
 
     // Variables para el manejo de balas
-    [Space]
-    [Header("Sistema de Disparos")]
-    [SerializeField]  private float velocidad_disparo = 20f;
-    [SerializeField]  private float tiempo_cadencia_disparo = 1.5f;
     private float tiempo_cadencia_actual = 0f;
     private BalaEnemiga bala_generada;
     private Rigidbody rb_bala;
-    private int tamano_lista_balas = 15;
+    private int tamano_lista_balas = 18;
     
 
     // Variables para el movimiento automático del enemigo
@@ -85,25 +85,25 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
 
                 // El enemigo se mueve hacia adelante
                 case 1:
-                    movimiento = enemigo.transform.forward * 2.5f * Time.deltaTime;
+                    movimiento = enemigo.transform.forward * velocidad_movimiento * Time.deltaTime;
                     rb_enemigo.MovePosition(enemigo.transform.position + movimiento);
                     break;
 
                 // El enemigo se mueve hacia atrás
                 case 2:
-                    movimiento = -enemigo.transform.forward * 2.5f * Time.deltaTime;
+                    movimiento = -enemigo.transform.forward * velocidad_movimiento * Time.deltaTime;
                     rb_enemigo.MovePosition(enemigo.transform.position + movimiento);
                     break;
 
                 // El enemigo se mueve hacia la izquierda
                 case 3:
-                    movimiento = -enemigo.transform.right * 2.5f * Time.deltaTime;
+                    movimiento = -enemigo.transform.right * velocidad_movimiento * Time.deltaTime;
                     rb_enemigo.MovePosition(enemigo.transform.position + movimiento);
                     break;
 
                 // El enemigo se mueve hacia la derecha
                 case 4:
-                    movimiento = enemigo.transform.right * 2.5f * Time.deltaTime;
+                    movimiento = enemigo.transform.right * velocidad_movimiento * Time.deltaTime;
                     rb_enemigo.MovePosition(enemigo.transform.position + movimiento);
                     break;
 

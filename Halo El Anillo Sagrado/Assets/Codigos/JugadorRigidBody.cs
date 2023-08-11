@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class JugadorRigidBody : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class JugadorRigidBody : MonoBehaviour {
     [Header("Elementos en Pantalla")]
     [SerializeField] private Image barra_escudo;
     [SerializeField] private Image barra_vida;
+    [SerializeField] private Text coleccionables_actuales;
     private float escudo = 100f;
     private float vida = 100f;
     private float tiempo_espera_escudo = 5f;
@@ -35,6 +37,9 @@ public class JugadorRigidBody : MonoBehaviour {
     private Animator animator;
     private bool en_suelo = false;
     private float mouseY;
+
+    // Conteo para los coleccionables del nivel
+    private int cantidad_coleccionables = 0;
 
 
     /*** Funciones ***/
@@ -94,6 +99,8 @@ public class JugadorRigidBody : MonoBehaviour {
         mouseY = Mathf.Clamp(mouseY, -70f, 70f);
         camara.transform.localEulerAngles = Vector3.left * mouseY;
 
+        // Obliga al cursor del ratón a permanecer siempre en el centro de la pantalla
+        Cursor.lockState = CursorLockMode.Locked;
 
         // Revisar si el escudo no esta lleno
         recargarEscudo();
@@ -104,12 +111,19 @@ public class JugadorRigidBody : MonoBehaviour {
         if (collision.gameObject.tag == "Suelo") {
             en_suelo = true;
         }
+
         // El jugador toca una caja de municiones
         else if (collision.gameObject.tag == "Caja Municion") {
             generador_balas.agregarMunicionMaxima(collision);
         }
+
         // El jugador recibe una bala enemiga
         else if (collision.gameObject.tag == "Bala Enemiga") {
+
+            // En caso de que se estuviese recargando el escudo y se recibe una bala, se detiene el sonido
+            if (fuente_audio.clip == sonido_escudo_recargando && fuente_audio.isPlaying == true) {
+                fuente_audio.Stop();
+            }
 
             // El jugador todavía tiene escudo
             if (escudo > 0f) {
@@ -135,8 +149,9 @@ public class JugadorRigidBody : MonoBehaviour {
                 escudo = 0f;
                 vida -= 15f;
 
+                // El jugador "muere"
                 if (vida <= 0f) {
-                    print("Escena de Muerte");
+                    SceneManager.LoadScene("MUERTE");
                 }
             }
 
@@ -144,6 +159,27 @@ public class JugadorRigidBody : MonoBehaviour {
             escudo_lleno = false;
             tiempo_espera_escudo_actual = 0f;
             actualizarEscudoUI();
+        }
+
+        // El jugador toca un objeto coleccionable
+        else if (collision.gameObject.tag == "Coleccionable") {
+            cantidad_coleccionables++;
+            coleccionables_actuales.text = cantidad_coleccionables.ToString();
+            Destroy(collision.gameObject);
+
+            // Ya se consiguieron todos los coleccionables del nivel (Misión Cumplida!!)
+            if (cantidad_coleccionables == 4) {
+                print("Mision Cumplida!!");
+
+                /*
+                 * ¡¡¡ Cargar Escena de "Victoria" !!!
+                 * */
+            }
+        }
+
+        // El jugador, por alguna razón, se cae al vacío
+        else if (collision.gameObject.tag == "Vacio") {
+            SceneManager.LoadScene("MUERTE");
         }
     }
 

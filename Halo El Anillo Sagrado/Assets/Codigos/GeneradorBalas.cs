@@ -27,7 +27,7 @@ public class GeneradorBalas : MonoBehaviour {
     private Animator animator_jugador;
     private Bala bala_generada;
     private Rigidbody rb_bala;
-    private float velocidad_disparo = 40f;
+    private float velocidad_disparo = 70f;
     private int balas_actuales = 32;
     private int balas_maximas = 108;
 

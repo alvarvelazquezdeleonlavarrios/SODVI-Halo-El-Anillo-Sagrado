@@ -9,6 +9,8 @@ TagManager:
   - Caja Municion
   - Enemigo
   - Bala Enemiga
+  - Vacio
+  - Coleccionable
   layers:
   - Default
   - TransparentFX
