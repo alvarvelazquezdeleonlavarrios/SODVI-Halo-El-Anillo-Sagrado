@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/MUERTE.unity
     guid: 55b84a9a7ce227d45839b233a675a28b
+  - enabled: 1
+    path: Assets/Escenas/Victoria.unity
+    guid: de073bda1fc2ff649b226a88eae56113
   m_configObjects: {}

@@ -11,6 +11,7 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
     [Space]
     [Header("Movimiento Enemigo")]
     [SerializeField] private float velocidad_movimiento = 3.6f;
+    [SerializeField] private float tiempo_movimiento = 2f;
 
     [Space]
     [Header("Atributos Bala Enemiga")]
@@ -36,7 +37,6 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
     // Variables para el movimiento automático del enemigo
     Vector3 movimiento;
     private bool jugador_detectado = false;
-    private float tiempo_movimiento = 2f;
     private float tiempo_movimiento_actual = 0f;
     private int movimiento_aleatorio = 0;
 

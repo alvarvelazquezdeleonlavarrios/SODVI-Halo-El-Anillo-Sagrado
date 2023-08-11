@@ -18,6 +18,7 @@ public class GeneradorBalas : MonoBehaviour {
     [Space]
     [Header("Sistema de Audio")]
     [SerializeField] private AudioSource sonido_recarga;
+    [SerializeField] private AudioSource sonido_recoger_municion;
     [SerializeField] private AudioSource prefab_sonido_disparo;
     private AudioSource[] lista_audios_disparo;
     private int tamano_lista_audios_disparo = 25;
@@ -194,6 +195,7 @@ public class GeneradorBalas : MonoBehaviour {
                     balas_maximas = 216;
                 }
 
+                sonido_recoger_municion.Play();
                 actualizarBalasUI();
                 Destroy(objeto_cargador.gameObject);
             }

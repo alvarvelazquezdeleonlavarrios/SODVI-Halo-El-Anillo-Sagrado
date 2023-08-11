@@ -49,6 +49,9 @@ public class JugadorRigidBody : MonoBehaviour {
         rb.constraints = RigidbodyConstraints.FreezeRotation;
 
         animator = GetComponent<Animator>();
+
+        // Obliga al cursor del ratón a permanecer siempre en el centro de la pantalla
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update() {
@@ -99,8 +102,6 @@ public class JugadorRigidBody : MonoBehaviour {
         mouseY = Mathf.Clamp(mouseY, -70f, 70f);
         camara.transform.localEulerAngles = Vector3.left * mouseY;
 
-        // Obliga al cursor del ratón a permanecer siempre en el centro de la pantalla
-        Cursor.lockState = CursorLockMode.Locked;
 
         // Revisar si el escudo no esta lleno
         recargarEscudo();
@@ -151,6 +152,10 @@ public class JugadorRigidBody : MonoBehaviour {
 
                 // El jugador "muere"
                 if (vida <= 0f) {
+                    // Regresa el control del cursor al jugador
+                    Cursor.lockState = CursorLockMode.None;
+
+                    // Carga la escena de muerte
                     SceneManager.LoadScene("MUERTE");
                 }
             }
@@ -167,18 +172,22 @@ public class JugadorRigidBody : MonoBehaviour {
             coleccionables_actuales.text = cantidad_coleccionables.ToString();
             Destroy(collision.gameObject);
 
-            // Ya se consiguieron todos los coleccionables del nivel (Misión Cumplida!!)
+            // Ya se consiguieron todos los 4 coleccionables del nivel (Misión Cumplida!!)
             if (cantidad_coleccionables == 4) {
-                print("Mision Cumplida!!");
+                // Regresa el control del cursor al jugador
+                Cursor.lockState = CursorLockMode.None;
 
-                /*
-                 * ¡¡¡ Cargar Escena de "Victoria" !!!
-                 * */
+                // Carga la escena de victoria
+                SceneManager.LoadScene("Victoria");
             }
         }
 
         // El jugador, por alguna razón, se cae al vacío
         else if (collision.gameObject.tag == "Vacio") {
+            // Regresa el control del cursor al jugador
+            Cursor.lockState = CursorLockMode.None;
+
+            // Carga la escena de muerte
             SceneManager.LoadScene("MUERTE");
         }
     }

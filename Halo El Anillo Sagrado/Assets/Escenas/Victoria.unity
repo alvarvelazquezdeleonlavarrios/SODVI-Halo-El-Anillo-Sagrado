@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1.9, y: -2.7}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 500.3407, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96751376
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: JUGAR
+  m_text: VOLVER A JUGAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bcfbe8d3b65b9a408daf170e7bbe296, type: 2}
   m_sharedMaterial: {fileID: -7339534251065033752, guid: 6bcfbe8d3b65b9a408daf170e7bbe296, type: 2}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LO LOGRASTE!!! FELICIDADES CAMPEON, DESCANSA UN POCO O SIGUE AYUDANDO
+  m_text: LO LOGRASTE!!! HAS CONSEGUIDO TODOS LOS INDICES DE ACTIVACION
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bcfbe8d3b65b9a408daf170e7bbe296, type: 2}
   m_sharedMaterial: {fileID: -7339534251065033752, guid: 6bcfbe8d3b65b9a408daf170e7bbe296, type: 2}
@@ -325,8 +325,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278241023
-  m_fontColor: {r: 1, g: 0.77560496, b: 0, a: 1}
+    rgba: 4279168512
+  m_fontColor: {r: 0, g: 0.9339623, b: 0.05590185, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -538,8 +538,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 353.62146}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 21.3093, y: 353.62146}
+  m_SizeDelta: {x: 307.5876, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &564136777
 MonoBehaviour:
@@ -670,8 +670,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.4000146, y: -2.6999977}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1.6073, y: -2.6999977}
+  m_SizeDelta: {x: 500.3407, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622638714
 MonoBehaviour:
@@ -693,7 +693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: JUGAR
+  m_text: VOLVER A JUGAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bcfbe8d3b65b9a408daf170e7bbe296, type: 2}
   m_sharedMaterial: {fileID: -7339534251065033752, guid: 6bcfbe8d3b65b9a408daf170e7bbe296, type: 2}
@@ -1211,7 +1211,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a6deef2025877854dbb231647c31d403, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 802ad0408e62bf6409ce9745391511ca, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1335,8 +1335,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 228}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 21.3093, y: 228}
+  m_SizeDelta: {x: 307.5876, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1452602394
 MonoBehaviour:
@@ -1466,9 +1466,9 @@ RectTransform:
   m_Father: {fileID: 472246567}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -495.4, y: 61}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -495.4, y: -479}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656747323
@@ -1491,7 +1491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LO LOGRASTE!!! FELICIDADES CAMPEON, DESCANSA UN POCO O SIGUE AYUDANDO
+  m_text: LO LOGRASTE!!! HAS CONSEGUIDO TODOS LOS INDICES DE ACTIVACION
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bcfbe8d3b65b9a408daf170e7bbe296, type: 2}
   m_sharedMaterial: {fileID: -7339534251065033752, guid: 6bcfbe8d3b65b9a408daf170e7bbe296, type: 2}
@@ -1603,8 +1603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.5794067, y: -0.000030517578}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 17, y: 0.00082874}
+  m_SizeDelta: {x: 888.31, y: 185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709560074
 MonoBehaviour:
@@ -1635,8 +1635,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278238719
-  m_fontColor: {r: 1, g: 0.7398775, b: 0, a: 1}
+    rgba: 4279168512
+  m_fontColor: {r: 0, g: 0.9339623, b: 0.05590185, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1653,15 +1653,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 86.9
+  m_fontSizeBase: 86.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -624.58777, w: -58.220497}
+  m_margin: {x: -0.76516724, y: 0, z: 3.7027283, w: -2.9184341}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1909,17 +1909,17 @@ RectTransform:
   m_GameObject: {fileID: 1929846775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -45.000008}
-  m_LocalScale: {x: 2.9220717, y: 2.9220717, z: 2.9220717}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1709560073}
   m_Father: {fileID: 472246567}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -940.9999, y: 341.99994}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -228.5}
+  m_SizeDelta: {x: 888.3042, y: 184.9983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1929846777
 MonoBehaviour:
@@ -1968,15 +1968,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 86.9
+  m_fontSizeBase: 86.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2004,7 +2004,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -624.58777, w: -58.220497}
+  m_margin: {x: 0, y: 0, z: -2.6743164, w: 1.118309}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -4746,7 +4746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemigo: {fileID: 4011000981155221434}
   enemigo_generador_bala: {fileID: 1475764887655466874}
-  velocidad_movimiento: 3.6
+  velocidad_movimiento: 4.2
+  tiempo_movimiento: 2
   prefab_bala_enemiga: {fileID: 6368082203811991030, guid: 3c52c2331c240c440be7dc29d5a5eaac, type: 3}
   velocidad_disparo: 35
   tiempo_cadencia_disparo: 0.75
