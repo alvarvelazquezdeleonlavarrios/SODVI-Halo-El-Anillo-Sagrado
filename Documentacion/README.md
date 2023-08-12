@@ -12,6 +12,6 @@ A continuación, se muestra un listado de las scripts programadas en C# que conf
 
 5. [EnemigoZonaDeteccion.cs](/Documentacion/EnemigoZonaDeteccion.md): controla los movimientos del enemigo en el escenario, así como permitirle disparar hacia el jugador.
 
-6. [BalaEnemiga.cs](/Documentacion/BalaEnemiga.md):representa a una bala disparada por el enemigo, permite a un objeto de bala desactivarse luego de un tiempo para que pueda ser utilizada nuevamente por el enemigo.
+6. [BalaEnemiga.cs](/Documentacion/BalaEnemiga.md): representa a una bala disparada por el enemigo, permite a un objeto de bala desactivarse luego de un tiempo para que pueda ser utilizada nuevamente por el enemigo.
 
 7. [BOTONES.cs](/Documentacion/BOTONES.md): script que se encarga de la carga entre escenas y de cerrar el programa.

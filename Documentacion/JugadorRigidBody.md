@@ -78,8 +78,8 @@ Cantidad actual de coleccionables que el jugador a adquirido.
 ### 1. `void Start()`
 Configura los componentes de RigidBody y Animator del jugador para acceder a estos más tarde. Obliga al cursor del ratón a permanecer siempre en el centro de la pantalla
 
-### 2. `void Update()`
-Permite al usuario mover al jugador izquierda, derecha, adelante y atrás presionando las teclas WASD y controlando su componente RigidBody (dependiendo si estas se presionan o no reproduce las animaciones de caminar o de reposo). Además, con el movimiento del ratón permite rotar hacia los lados al jugador y a la cámara hacia arriba y abajo. Detecta en todo momento si se debe recargar el escudo o no.
+### 2. `void FixedUpdate()`
+Permite al usuario mover al jugador izquierda, derecha, adelante y atrás presionando las teclas WASD y controlando su componente RigidBody (dependiendo si estas se presionan o no reproduce las animaciones de caminar o de reposo). Además, con el movimiento del ratón permite rotar hacia los lados al jugador y a la cámara hacia arriba y abajo. Detecta en todo momento si se debe recargar el escudo o no. La función, al ser FixedUpdate, se asegura de que el tiempo de ejecución sea el mismo independientemente del hardware del dispositivo en donde se esté ejecutando el juego.
 
 ### 3. `void OnCollisionEnter(Collision collision)`
 Función que detecta si el jugador colisionó con alguno de los siguientes objetos:

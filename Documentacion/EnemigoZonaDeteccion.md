@@ -66,8 +66,8 @@ Selecciona un movimiento aleatorio dentro de un rango.
 ### 1. `void Start()`
 Inicializa los arreglos de balas y audio, generando las cantidades correspondientes.
 
-### 2. `void Update()`
-Si se detecta a un jugador cerca, cada frame del juego va moviendo al perosnaje en una dirección aleatoria. Pasado un tiempo, selecciona otro movimiento aleatorio.
+### 2. `void FixedUpdate()`
+Si se detecta a un jugador cerca, cada frame del juego va moviendo al perosnaje en una dirección aleatoria. Pasado un tiempo, selecciona otro movimiento aleatorio. La función, al ser FixedUpdate, se asegura de que el tiempo de ejecución sea el mismo independientemente del hardware del dispositivo en donde se esté ejecutando el juego.
 
 ### 3. `void OnTriggerEnter(Collider other)`
 Detecta si un jugador se acercó al enemigo.
