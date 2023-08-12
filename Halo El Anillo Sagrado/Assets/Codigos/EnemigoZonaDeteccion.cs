@@ -67,10 +67,10 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
         rb_enemigo = enemigo.GetComponent<Rigidbody>();
     }
 
-    void Update() {
+    void FixedUpdate() {
         // Si hay un jugador cerca, el enemigo comenzará a moverse
         if (jugador_detectado == true) {
-            tiempo_movimiento_actual += Time.deltaTime;
+            tiempo_movimiento_actual += Time.fixedDeltaTime;
 
             if (tiempo_movimiento_actual >= tiempo_movimiento) {
                 movimiento_aleatorio = Random.Range(0, 5);
@@ -85,25 +85,25 @@ public class EnemigoZonaDeteccion : MonoBehaviour {
 
                 // El enemigo se mueve hacia adelante
                 case 1:
-                    movimiento = enemigo.transform.forward * velocidad_movimiento * Time.deltaTime;
+                    movimiento = enemigo.transform.forward * velocidad_movimiento * Time.fixedDeltaTime;
                     rb_enemigo.MovePosition(enemigo.transform.position + movimiento);
                     break;
 
                 // El enemigo se mueve hacia atrás
                 case 2:
-                    movimiento = -enemigo.transform.forward * velocidad_movimiento * Time.deltaTime;
+                    movimiento = -enemigo.transform.forward * velocidad_movimiento * Time.fixedDeltaTime;
                     rb_enemigo.MovePosition(enemigo.transform.position + movimiento);
                     break;
 
                 // El enemigo se mueve hacia la izquierda
                 case 3:
-                    movimiento = -enemigo.transform.right * velocidad_movimiento * Time.deltaTime;
+                    movimiento = -enemigo.transform.right * velocidad_movimiento * Time.fixedDeltaTime;
                     rb_enemigo.MovePosition(enemigo.transform.position + movimiento);
                     break;
 
                 // El enemigo se mueve hacia la derecha
                 case 4:
-                    movimiento = enemigo.transform.right * velocidad_movimiento * Time.deltaTime;
+                    movimiento = enemigo.transform.right * velocidad_movimiento * Time.fixedDeltaTime;
                     rb_enemigo.MovePosition(enemigo.transform.position + movimiento);
                     break;
 
