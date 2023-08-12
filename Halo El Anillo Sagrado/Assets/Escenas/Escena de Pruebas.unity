@@ -15095,7 +15095,7 @@ GameObject:
   - component: {fileID: 1226191478}
   - component: {fileID: 1226191477}
   m_Layer: 0
-  m_Name: Coche
+  m_Name: Bloque Rojo
   m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20221,6 +20221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elite
       objectReference: {fileID: 0}
+    - target: {fileID: 564875756961830991, guid: 564e22f82b2c65f4db5b7447394e81af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 908890596251321077, guid: 564e22f82b2c65f4db5b7447394e81af, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -20436,6 +20440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grunt
       objectReference: {fileID: 0}
+    - target: {fileID: 5400459980681600487, guid: ca04fd1125e932642bab1171090d49c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca04fd1125e932642bab1171090d49c9, type: 3}
 --- !u!1001 &6347787455434939438
@@ -20492,6 +20500,10 @@ PrefabInstance:
     - target: {fileID: 5535140979722161523, guid: d14509ec60ff1744ea503d5c1050625d, type: 3}
       propertyPath: m_Name
       value: Indice de Activacion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535140979722161523, guid: d14509ec60ff1744ea503d5c1050625d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d14509ec60ff1744ea503d5c1050625d, type: 3}
