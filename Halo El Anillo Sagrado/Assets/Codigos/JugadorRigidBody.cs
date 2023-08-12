@@ -54,7 +54,7 @@ public class JugadorRigidBody : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    void Update() {
+    void FixedUpdate() {
         // Entrada desde teclado
         float input_horizontal = Input.GetAxis("Horizontal");
         float input_vertical = Input.GetAxis("Vertical");
@@ -76,7 +76,7 @@ public class JugadorRigidBody : MonoBehaviour {
         }
 
         // Aplica movimiento al jugador
-        Vector3 movimiento = direccion * velocidad_movimiento * Time.deltaTime;
+        Vector3 movimiento = direccion * velocidad_movimiento * Time.fixedDeltaTime;
         rb.MovePosition(transform.position + movimiento);
 
 
@@ -84,7 +84,7 @@ public class JugadorRigidBody : MonoBehaviour {
         float mouseX = Input.GetAxis("Mouse X");
 
         // Calcula el vector de rotacion
-        Vector3 rotacion = new Vector3(0, mouseX, 0) * velocidad_giro * 10f * Time.deltaTime;
+        Vector3 rotacion = new Vector3(0, mouseX, 0) * velocidad_giro * 10f * Time.fixedDeltaTime;
 
         // Movimiento de giro
         transform.Rotate(rotacion);
