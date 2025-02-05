@@ -1,4 +1,4 @@
-# Halo-El-Anillo-Sagrado
+# SODVI: Halo El Anillo Sagrado
 **Equipo:** #1
 
 **Integrantes:**
@@ -7,10 +7,10 @@
 
 **Semestre:** 2024-1
 
-**Torre de Niveles:** No Aplica
+**Torre de Niveles:** (No Aplica)
 
 ## Introducción
-Proyecto Final en parejas para el curso de Unity Básico de SODVI, que consiste en el desarrollo de un juego de disparos en primera persona (FPS) con temática de la saga Halo. Como objetivo se espera la creación de un juego funcional generado en Unity 3D.
+Proyecto Final en parejas para el curso de Unity Básico de SODVI, que consiste en el desarrollo de un juego de disparos en primera persona (FPS) con temática de la saga *Halo*. Como objetivo se espera la creación de un juego funcional generado en Unity 3D.
 
 ## Descripción del Proyecto
 Este proyecto consiste en un juego de disparos con temática y mecánicas similares a las de la saga de juegos conocida como Halo, en donde el jugador deberá explorar el anillo, eliminar a los pelotones del Covenant y recuperar los índices de activación para evitar que el enemigo active el anillo y destruya la vida en el universo.
